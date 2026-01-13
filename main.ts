@@ -3,7 +3,7 @@ namespace texasIcons {
 
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
-        for (let img of texasIcons.cowboyHatFrames) {
+        for (let img of cowboyHatFrames) {
             images.createImage(img).showImage(0)
             basic.pause(150)
         }
@@ -11,9 +11,10 @@ namespace texasIcons {
 
     //% block="Longhorn Icon"
     export function scrollLonghorn() {
-        for (let img of texasIcons.longhornFrames) {
+        for (let img of longhornFrames) {
             images.createImage(img).showImage(0)
             basic.pause(150)
         }
     }
+
 }
