@@ -1,12 +1,12 @@
 {
     "name": "tech-apps",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Texas-themed LED icons for micro:bit",
     "dependencies": {
       "core": "*"
-    }, 
-    "public": true,    
+    },   
     "files": [
       "main.ts"
-    ]
+    ],
+    "public": true
   }
