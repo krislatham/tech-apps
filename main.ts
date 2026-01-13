@@ -1,14 +1,24 @@
 //% color=#BF5700 icon="\uf005" block="Texas Icons"
 namespace texasIcons {
 
+    /**
+     * Scrolls a icon animation on the micro:bit display.
+     * @param frames The array of string frames to display
+     * @param delay Time in ms between frames, eg: 150
+     */
     //% block="Cowboy Hat Icon"
-    export function scrollCowboyHat() {
-        for (let img of cowboyHatFrames) {
-            images.createImage(img).showImage(0)
-            basic.pause(150)
+    export function scrollIcon(frames: string[], delay: number = 150) {
+        for (let frame of frames) {
+            images.createImage(frame).showImage(0)
+            basic.pause(delay)
         }
     }
 
+    //% block="Cowboy Hat Icon"
+    export function scrollCowboyHat() {
+        scrollIcon(cowboyHatFrames, 150);
+    }
+/*
     //% block="Longhorn Icon"
     export function scrollLonghorn() {
         for (let img of longhornFrames) {
@@ -16,5 +26,5 @@ namespace texasIcons {
             basic.pause(150)
         }
     }
-
+*/
 }
