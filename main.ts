@@ -262,7 +262,7 @@ namespace texasIcons {
 
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
-        for (let i = 0; i < longhornFrames.length; i++) {
+        for (let i = 0; i < cowboyHatFrames.length; i++) {
             images.createImage(cowboyHatFrames[i]).showImage(0)
             basic.pause(150)
         }
