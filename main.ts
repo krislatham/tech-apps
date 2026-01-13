@@ -27,4 +27,9 @@ namespace texasIcons {
         # . . . .
         . # # # #
     `)
+
+    //% block="show Texas star"
+    export function showTexasStar() {
+        basic.showImage(TexasStar)
+    }
 }
