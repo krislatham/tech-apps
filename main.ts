@@ -99,7 +99,7 @@ images.createImage(`. . . . .
 . . . . .`)
 ]    
 
-let longhornFrames = [
+let longhornFrames: Image[] = [
 images.createImage(`. . . . .
 . . . . .
 . . . . .
