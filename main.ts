@@ -112,7 +112,7 @@ const cowboyHatFrame2: string[] = [
 
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
-        scrollIcon(cowboyHatFrame2, 150);
+        control.inBackground(() => scrollIcon(cowboyHatFrame2, 150))
     }
 /*
     //% block="Longhorn Icon"
