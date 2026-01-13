@@ -1,4 +1,4 @@
-//% color=#BF5700 icon="\uf2b9" block="Texas Icons"
+//% color=#BF5700 icon="\uf005" block="Texas Icons"
 namespace texasIcons {
 
     let longhornFrames = [
@@ -116,7 +116,7 @@ namespace texasIcons {
         `
     ]
 
-    //% block="Longhorn"
+    //% block="Longhorn Icon"
     export function scrollLonghorn() {
         for (let i = 0; i < longhornFrames.length; i++) {
             images.createImage(longhornFrames[i]).showImage(0)
