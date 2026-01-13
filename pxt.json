@@ -1,0 +1,12 @@
+{
+    "name": "pxt-texas-icons",
+    "version": "0.0.1",
+    "description": "Texas-themed LED icons for micro:bit",
+    "dependencies": {
+      "core": "*"
+    },
+    "files": [
+      "main.ts"
+    ],
+    "public": true
+  }
