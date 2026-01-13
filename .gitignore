@@ -1,0 +1,7 @@
+# Ignore the entire 'node_modules' directory and its contents
+node_modules/
+
+.pxt
+
+package.json
+package-lock.json
