@@ -102,6 +102,7 @@ const cowboyHatFrame2: string[] = [
      * @param frames The array of string frames to display
      * @param delay Time in ms between frames, eg: 150
      */
+    //% block="scroll icon"
     export function scrollIcon(frames: string[], delay: number = 150) {
         for (let frame of frames) {
             images.createImage(frame).showImage(0)
@@ -109,7 +110,7 @@ const cowboyHatFrame2: string[] = [
         }
     }
 
-    //% block="scroll icon"
+    //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
         scrollIcon(cowboyHatFrame2, 150);
     }
