@@ -197,13 +197,5 @@ const cowboyHatFrame2: string[] = [
     export function scrollCowboyHat() {
         control.inBackground(() => scrollIcon(cowboyHatFrame2, 150))
     }
-/*
-    //% block="Longhorn Icon"
-    export function scrollLonghorn() {
-        for (let img of longhornFrames) {
-            images.createImage(img).showImage(0)
-            basic.pause(150)
-        }
-    }
-*/
+
 }
