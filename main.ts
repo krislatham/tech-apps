@@ -1,105 +1,105 @@
 //% color=#BF5700 icon="\uf005" block="Texas Icons"
 namespace texasIcons {
 
-    let cowboyHatFrames = [
-`. . . . .
+let cowboyHatFrames: Image[] = [
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . . . .
-. . . . .`,
-`. . . . .
+. . . . .`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 # . . . .
-. . . . .`,
-`. . . . .
+. . . . .`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . # . . .
-# . . . .`,
-`. . . . .
+# . . . .`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . # . .
-# # . . .`,
-`. . . . .
+# # . . .`),
+images.createImage(`. . . . .
 . . . . .
 # . . . .
 # . . # .
-# # # . .`,
-`. . . . .
+# # # . .`),
+images.createImage(`. . . . .
 # . . . .
 . # . . .
 . # . . #
-. # # # .`,
-`# . . . .
+. # # # .`),
+images.createImage(`# . . . .
 . # . . .
 . . # . .
 . . # . .
-# # # # #`,
-`. # . . .
+# # # # #`),
+images.createImage(`. # . . .
 # . # . .
 . . . # .
 . . . # .
-# # # # #`,
-`# . # . .
+# # # # #`),
+images.createImage(`# . # . .
 . # . # .
 . . . . #
 . . . . #
-# # # # #`,
-`. # . # .
+# # # # #`),
+images.createImage(`. # . # .
 # . # . #
 . . . . .
 . . . . .
-# # # # #`,
-`. . # . #
+# # # # #`),
+images.createImage(`. . # . #
 . # . # .
 # . . . .
 # . . . .
-# # # # #`,
-`. . . # .
+# # # # #`),
+images.createImage(`. . . # .
 . . # . #
 . # . . .
 . # . . .
-# # # # #`,
-`. . . . #
+# # # # #`),
+images.createImage(`. . . . #
 . . . # .
 . . # . .
 . . # . .
-# # # # #`,
-`. . . . .
+# # # # #`),
+images.createImage(`. . . . .
 . . . . #
 . . . # .
 # . . # .
-. # # # #`,
-`. . . . .
+. # # # #`),
+images.createImage(`. . . . .
 . . . . .
 . . . . #
 . # . . #
-. . # # #`,
-`. . . . .
+. . # # #`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . # . .
-. . . # #`,
-`. . . . .
+. . . # #`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . . # .
-. . . . #`,
-`. . . . .
+. . . . #`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . . . #
-. . . . .`,
-`. . . . .
+. . . . .`),
+images.createImage(`. . . . .
 . . . . .
 . . . . .
 . . . . .
-. . . . .`
-    ]
+. . . . .`)
+]    
 
-    let longhornFrames = [
+let longhornFrames = [
 `. . . . .
 . . . . .
 . . . . .
@@ -182,18 +182,11 @@ namespace texasIcons {
 . . . . .`
     ]
 
-    //% block="Longhorn Icon"
-    export function scrollLonghorn() {
-        for (let i = 0; i < longhornFrames.length; i++) {
-            images.createImage(longhornFrames[i]).showImage(0)
-            basic.pause(150)
-        }
-    }
 
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
-        for (let i = 0; i < cowboyHatFrames.length; i++) {
-            images.createImage(cowboyHatFrames[i]).showImage(0)
+        for (let img of cowboyHatFrames) {
+            img.showImage(0)
             basic.pause(150)
         }
     }
