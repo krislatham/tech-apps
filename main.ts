@@ -134,7 +134,7 @@ namespace texasIcons {
         . . . . .
         . . . . .
         . . . . .
-        `,
+        `
     ]
 
     let longhornFrames = [
