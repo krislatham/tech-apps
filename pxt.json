@@ -6,7 +6,9 @@
       "core": "*"
     },
     "files": [
-      "main.ts"
+      "main.ts",
+      "cowboyHatFrames.ts",
+      "longhornFrames.ts"
     ],
     "public": true
   }
