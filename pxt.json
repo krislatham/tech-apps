@@ -2,11 +2,15 @@
     "name": "tech-apps",
     "version": "0.0.13",
     "description": "Texas-themed LED icons for micro:bit",
+    "license": "MIT",
     "dependencies": {
       "core": "*"
     },   
     "files": [
       "main.ts"
     ],
-    "public": true
+    "public": true,
+    "authors": [
+      "Kris Latham <kris.latham@gmail.com>"
+    ],
   }
