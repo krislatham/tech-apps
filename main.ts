@@ -3,47 +3,55 @@ namespace texasIcons {
 
     // Cowboy Hat animation frames
     let cowboyHatFrames: Image[] = [
-        images.createImage(`. . . . .
-         . . . . .
-         . . . . .
-         . . . . .
-         . . . . .`),
-        images.createImage(`. . . . .
-         . . . . .
-         . . . . .
-         # . . . .
-         . . . . .`),
-        images.createImage(`. . . . .
-         . . . . .
-         . . . . .
-         . # . . .
-         # . . . .`),
-        images.createImage(`. . . . .
-         . . . . .
-         . . . . .
-         . . # . .
-         # # . . .`),
-        images.createImage(`. . . . .
-         . . . . .
-         # . . . .
-         # . . # .
-         # # # . .`),
-        images.createImage(`. . . . .
-         # . . . .
-         . # . . .
-         . # . . #
-         . # # # .`),
-        images.createImage(`# . . . .
-         . # . . .
-         . . # . .
-         . . # . .
-         # # # # #`),
-        images.createImage(`. # . . .
-         # . # . .
-         . . . # .
-         . . . # .
-         # # # # #`)
-    ];
+        images.createImage(`
+. . . . .
+. . . . .
+. . . . .
+. . . . .
+. . . . .`),
+        images.createImage(`
+. . . . .
+. . . . .
+. . . . .
+# . . . .
+. . . . .`),
+        images.createImage(`
+. . . . .
+. . . . .
+. . . . .
+. # . . .
+# . . . .`),
+        images.createImage(`
+. . . . .
+. . . . .
+. . . . .
+. . # . .
+# # . . .`),
+        images.createImage(`
+. . . . .
+. . . . .
+# . . . .
+# . . # .
+# # # . .`),
+        images.createImage(`
+. . . . .
+# . . . .
+. # . . .
+. # . . #
+. # # # .`),
+        images.createImage(`
+# . . . .
+. # . . .
+. . # . .
+. . # . .
+# # # # #`),
+        images.createImage(`
+. # . . .
+# . # . .
+. . . # .
+. . . # .
+# # # # #`)
+]
 
 
     //% block="Cowboy Hat Icon"
