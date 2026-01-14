@@ -1,6 +1,6 @@
 {
     "name": "tech-apps",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "Texas-themed LED icons for micro:bit",
     "license": "MIT",
     "dependencies": {
