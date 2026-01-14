@@ -45,59 +45,6 @@ namespace texasIcons {
          # # # # #`)
     ];
 
-    // Longhorn animation frames
-    const longhornFrames: string[] = [
-        `. . . . .
-         . . . . .
-         . . . . .
-         . . . . .
-         . . . . .`,
-        `. # . . .
-         # . . . .
-         . . . . .
-         . . . . .
-         . . . . .`,
-        `. . # . .
-         # # . . .
-         . . . . .
-         . . . . .
-         . . . . .`,
-        `. . . # .
-         # # # . .
-         # . . . .
-         . . . . .
-         . . . . .`,
-        `. . . . #
-         . # # # .
-         # # . . .
-         # . . . .
-         . . . . .`,
-        `. . . . .
-         . . # # #
-         # # # . .
-         # # . . .
-         # . . . .`,
-        `. . . . .
-         . . . # #
-         # # # # .
-         # # # . .
-         . # . . .`
-    ];
-
-    /**
-     * Scroll a generic icon animation
-     * @param frames Array of string frames
-     * @param delay Time in ms between frames
-     */
-    /*
- 
-    export function scrollIcon(frames: string[], delay: number = 150) {
-        for (let frame of frames) {
-            images.createImage(frame).showImage(0)
-            basic.pause(delay)
-        }
-    }
-    */
 
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
@@ -107,10 +54,5 @@ namespace texasIcons {
             basic.pause(150)
         }
     }
-    /*
-    
-    export function scrollLonghorn() {
-        control.inBackground(() => scrollIcon(longhornFrames, 150));
-    }
-        */
+ 
 }
