@@ -2,7 +2,11 @@
 namespace texasIcons {
 
     // Cowboy Hat animation frames
-    let cowboyHatFrames: Image[] = [
+    let cowboyHatFrames: Image[] = null
+
+    function getCowboyHatFrames(): Image[] {
+        if(!cowboyHatFrames) {
+            cowboyHatFrames = [
         images.createImage(`
 . . . . .
 . . . . .
@@ -50,16 +54,38 @@ namespace texasIcons {
 # . # . .
 . . . # .
 . . . # .
+# # # # #`),
+        images.createImage(`
+. # . . .
+# . # . .
+. . . # .
+. . . # .
+# # # # #`),
+        images.createImage(`
+. # . . .
+# . # . .
+. . . # .
+. . . # .
+# # # # #`),
+        images.createImage(`
+. # . . .
+# . # . .
+. . . # .
+. . . # .
 # # # # #`)
-]
+            ]
+        }
+        return cowboyHatFrames
+    }
 
 
     //% block="Cowboy Hat Icon"
-    export function scrollCowboyHat() {
-        for(let frame of cowboyHatFrames) {
+    export function scrollCowboyHat(delay: number = 150) {
+        let frames = getCowboyHatFrames()
+        for(let frame of frames) {
             //control.inBackground(() => scrollIcon(cowboyHatFrames, 150));
             frame.showImage(0)
-            basic.pause(150)
+            basic.pause(delay)
         }
     }
  
