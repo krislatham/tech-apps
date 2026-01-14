@@ -2,47 +2,47 @@
 namespace texasIcons {
 
     // Cowboy Hat animation frames
-    const cowboyHatFrames: string[] = [
-        `. . . . .
+    let cowboyHatFrames: Image[] = [
+        images.createImage(`. . . . .
          . . . . .
          . . . . .
          . . . . .
-         . . . . .`,
-        `. . . . .
+         . . . . .`),
+        images.createImage(`. . . . .
          . . . . .
          . . . . .
          # . . . .
-         . . . . .`,
-        `. . . . .
+         . . . . .`),
+        images.createImage(`. . . . .
          . . . . .
          . . . . .
          . # . . .
-         # . . . .`,
-        `. . . . .
+         # . . . .`),
+        images.createImage(`. . . . .
          . . . . .
          . . . . .
          . . # . .
-         # # . . .`,
-        `. . . . .
+         # # . . .`),
+        images.createImage(`. . . . .
          . . . . .
          # . . . .
          # . . # .
-         # # # . .`,
-        `. . . . .
+         # # # . .`),
+        images.createImage(`. . . . .
          # . . . .
          . # . . .
          . # . . #
-         . # # # .`,
-        `# . . . .
+         . # # # .`),
+        images.createImage(`# . . . .
          . # . . .
          . . # . .
          . . # . .
-         # # # # #`,
-        `. # . . .
+         # # # # #`),
+        images.createImage(`. # . . .
          # . # . .
          . . . # .
          . . . # .
-         # # # # #`
+         # # # # #`)
     ];
 
     // Longhorn animation frames
@@ -89,6 +89,7 @@ namespace texasIcons {
      * @param frames Array of string frames
      * @param delay Time in ms between frames
      */
+    /*
     //% blockHidden
     export function scrollIcon(frames: string[], delay: number = 150) {
         for (let frame of frames) {
@@ -96,14 +97,19 @@ namespace texasIcons {
             basic.pause(delay)
         }
     }
-
+    */
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
-        control.inBackground(() => scrollIcon(cowboyHatFrames, 150));
+        for(let frame of cowboyHatFrames) {
+            //control.inBackground(() => scrollIcon(cowboyHatFrames, 150));
+            frame.showImage(0)
+            basic.pause(delay)
+        }
     }
-
+    /*
     //% block="Longhorn Icon"
     export function scrollLonghorn() {
         control.inBackground(() => scrollIcon(longhornFrames, 150));
     }
+        */
 }
