@@ -98,13 +98,13 @@ namespace texasIcons {
         }
     }
     */
-   
+
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
         for(let frame of cowboyHatFrames) {
             //control.inBackground(() => scrollIcon(cowboyHatFrames, 150));
             frame.showImage(0)
-            basic.pause(delay)
+            basic.pause(150)
         }
     }
     /*
