@@ -90,7 +90,7 @@ namespace texasIcons {
      * @param delay Time in ms between frames
      */
     /*
-    //% blockHidden
+ 
     export function scrollIcon(frames: string[], delay: number = 150) {
         for (let frame of frames) {
             images.createImage(frame).showImage(0)
@@ -98,6 +98,7 @@ namespace texasIcons {
         }
     }
     */
+   
     //% block="Cowboy Hat Icon"
     export function scrollCowboyHat() {
         for(let frame of cowboyHatFrames) {
@@ -107,7 +108,7 @@ namespace texasIcons {
         }
     }
     /*
-    //% block="Longhorn Icon"
+    
     export function scrollLonghorn() {
         control.inBackground(() => scrollIcon(longhornFrames, 150));
     }
