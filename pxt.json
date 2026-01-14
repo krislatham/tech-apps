@@ -7,10 +7,16 @@
       "core": "*"
     },   
     "files": [
+      "README.md",
       "main.ts"
     ],
     "public": true,
     "authors": [
       "Kris Latham <kris.latham@gmail.com>"
     ],
+    "card": {
+      "name": "Texas Icons",
+      "imageUrl": "file:../icon.png",
+      "feedbackUrl": "http://siever.info"
+      }
   }

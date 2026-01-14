@@ -1,11 +1,16 @@
-# Texas Icons for micro:bit
+# Texas Themed Scrolling Icons for micro:bit
 
 Texas-themed LED icons for use with the BBC micro:bit.
 
 ## Icons included
-- Texas star
+- Texas Lone Star Flag
+- Alamo
+- Oil Derrick
+- Tipi (Teepee)
 - Longhorn
-- Texas outline
+- Texas Boot
+
+Designed for elementary classrooms.
 
 ## Example
 ```ts
